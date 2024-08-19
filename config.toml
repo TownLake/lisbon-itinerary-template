@@ -1,0 +1,45 @@
+baseURL = "http://your-trip.samrhea.com/"
+languageCode = "en-us"
+title = "🇵🇹 Welcome, You, to Lisbon!"
+theme = "paper"
+paginate = 3
+enableInLineShortcodes = true
+
+# [params]
+#  twitter = 'LakeAustinBlvd'
+#  instagram = 'LakeAustinBlvd'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[menu]
+
+  [[menu.main]]
+    identifier = "your-trip"
+    name = "Your Trip"
+    url = "/your-trip/"
+    weight = 10
+  [[menu.main]]
+    identifier = "faq"
+    name = "FAQ"
+    url = "/faq/"
+  [[menu.main]]
+    identifier = "who"
+    name = "Who?"
+    url = "https://blog.samrhea.com/pages/about"
+    weight = 13
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+[services]
+
+  [services.instagram]
+    disableInlineCSS = true
+
+  [services.twitter]
+    disableInlineCSS = true
